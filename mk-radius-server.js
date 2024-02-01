@@ -7,7 +7,7 @@ const server = dgram.createSocket("udp4");
 server.on("message", (msg, rinfo) => {
   debug(msg, rinfo)
     .then(() => {
-      // console.log('succes');
+      console.log('received a message');
     })
     .catch((err) => {
       console.log(err);
